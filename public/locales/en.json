@@ -1,3 +1,16 @@
 {
-    "start":"start"
-}
+    "start": "started",
+    "navbar": {
+      "mf": "Mon-Fri, 09:00 to 18:00",
+      "cons": "Get consultation",
+      "main": "Home",
+      "us": "About us",
+      "cone": "Contact",
+      "maq": "Our articles",
+      "news": "News",
+      "lib": "Legal library",
+      "serv": "Services",
+      "paper": "Document samples"
+    }
+  }
+  

@@ -1,3 +1,15 @@
 {
-    "start":"boshlandi"
+  "start": "boshlandi",
+  "navbar": {
+    "mf": "Dushanba-Juma, 09:00 dan 18:00 gacha",
+    "cons": "Maslahat olish",
+    "main": "Asosiy",
+    "us": "Biz haqimizda",
+    "cone": "Bog'lanish",
+    "maq": "Bizning maqolalar",
+    "news": "Yangiliklar",
+    "lib": "Yuridik   kutubxona",
+    "serv": "Xizmatlar",
+    "paper": "Hujjat Namunalari"
+  }
 }
