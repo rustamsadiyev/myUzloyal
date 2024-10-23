@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes openAnimation {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes closeAnimation {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -300px;
+  }
+}
+
+.open {
+  animation: openAnimation 0.3s forwards;
+}
+
+.close {
+  animation: closeAnimation 0.1s forwards;
+}
+
+.hover{
+  height: 100%;
+}
+
+.hover:hover {
+  border-bottom: 2px solid yellow;
+  transition: 1s;
+}
+

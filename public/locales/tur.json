@@ -1,3 +1,16 @@
 {
-    "start":"boshlanadur"
-}
+    "start": "başladı",
+    "navbar": {
+      "mf": "Pazartesi-Cuma, 09:00-18:00",
+      "cons": "Danışmanlık alın",
+      "main": "Ana Sayfa",
+      "us": "Hakkımızda",
+      "cone": "İletişim",
+      "maq": "Makalelerimiz",
+      "news": "Haberler",
+      "lib": "Hukuk Kütüphanesi",
+      "serv": "Hizmetler",
+      "paper": "Belge Örnekleri"
+    }
+  }
+  
