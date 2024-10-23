@@ -47,7 +47,9 @@ function Library() {
                 <h1 className="heading3 mb-3 text-[#253858] sm:text-left text-center text-3xl ">
                   Қонунлар
                 </h1>
-                {sources?.map((value, index) => (
+                {sources
+                .slice(0,3)
+                .map((value, index) => (
                   <div key={index} className="flex gap-2 items-center">
                     <GoArrowRight className="text" />
                     <a

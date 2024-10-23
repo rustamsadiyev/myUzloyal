@@ -14,6 +14,8 @@ import Navbar from "./components/Navbar";
 import Services from "./pages/services/Services";
 import Error from "./pages/error/Error";
 import Faqs from "./components/Faqs";
+import More from "./pages/blog/More";
+import SimilarPosts from "./pages/blog/SimilarPosts";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/samples" element={<Samples />} />
         <Route path="/services" element={<Services />} />
         <Route path="/faqs" element={<Faqs />} />
+        <Route path="/blog-single-left-sidebar/:id" element={<More />} />
+        <Route path="/news-single/:id" element={<SimilarPosts />} />
         <Route path="/*" element={<Error />} />
         {/* </Route> */}
       </Routes>
