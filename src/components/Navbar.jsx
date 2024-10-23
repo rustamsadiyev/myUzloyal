@@ -77,15 +77,14 @@ function Navbar() {
     },
   ];
   const menuItems = [
-    { name: t('navbar.main'), url: '/' },
-    { name: t('navbar.us'), url: '/about' },
-    { name: t('navbar.serv'), url: '/services' },
-    { name: t('navbar.maq'), url: '/articles' },
-    { name: t('navbar.news'), url: '/news' },
-    { name: t('navbar.cone'), url: '/contact' },
-    { name: t('navbar.lib'), url: '/library' },
+    { name: t("navbar.main"), url: "/" },
+    { name: t("navbar.us"), url: "/about" },
+    { name: t("navbar.serv"), url: "/services" },
+    { name: t("navbar.maq"), url: "/articles" },
+    { name: t("navbar.news"), url: "/news" },
+    { name: t("navbar.cone"), url: "/contact" },
+    { name: t("navbar.lib"), url: "/library" },
   ];
-  
 
   return (
     <>
@@ -148,24 +147,32 @@ function Navbar() {
         </div>
 
         {/* Sub Navigation */}
-        <div className="bg-primary text-white py-5">
+        <div className="bg-primary text-white">
           {screen >= 768 ? (
-            <div className="container mx-auto flex justify-evenly">
-              <a href="/news" className="hover text-xl">
-                {t("navbar.news")}
-              </a>
-              <a href="/library" className="hover text-xl">
-                {t("navbar.lib")}
-              </a>
-              <a href="/services" className="hover text-xl">
-                {t("navbar.serv")}
-              </a>
-              <a href="/documents" className="hover text-xl">
-                {t("navbar.paper")}
-              </a>
+            <div className="container mx-auto py-0 flex justify-evenly">
+              <div className="hover">
+                <a href="/news" className="navbarlink text-xl">
+                  {t("navbar.news")}
+                </a>
+              </div>
+              <div className="hover">
+                <a href="/library" className="navbarlink text-xl">
+                  {t("navbar.lib")}
+                </a>
+              </div>
+              <div className="hover">
+                <a href="/services" className="navbarlink text-xl">
+                  {t("navbar.serv")}
+                </a>
+              </div>
+              <div className="hover">
+                <a href="/documents" className="navbarlink text-xl">
+                  {t("navbar.paper")}
+                </a>
+              </div>
             </div>
           ) : (
-            <div className="px-6">
+            <div className="px-6 py-5">
               <button
                 className="bg-[#0000007c] p-2 rounded-lg"
                 onClick={() => setOpen(true)}
