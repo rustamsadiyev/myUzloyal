@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Hero() {
+function Faqs() {
   return (
     <div>
-      Hero!
+      Faqs!
     </div>
   )
 }
 
-export default Hero
+export default Faqs

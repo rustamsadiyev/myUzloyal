@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 function Navbar() {
     const { t, i18n } = useTranslation();
     
-    // Use the custom hook to get data
     const { services, news, blogs, sources, faqs } = useGetData();
 
     const handleChangeLanguage = (selectedLanguage) => {
