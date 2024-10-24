@@ -1,9 +1,10 @@
 import React from 'react';
 import mainBg from '/public/assets/mainImage.jpg';
 import useGetData from '/public/api/api';
-import { FaAngleDoubleRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import Xizmatlar from '../../components/Xizmatlar';
+import Postlar from '../../components/Postlar';
 
 function Blog() {
   const { blogs, services, news } = useGetData();
@@ -11,6 +12,7 @@ function Blog() {
 
   return (
     <>
+    
       <div className="main">
         {/* Image Section */}
         <div
@@ -61,51 +63,10 @@ function Blog() {
 
           {/* Sidebar Section */}
           <div className="w-full lg:w-[30%] space-y-16  ">
-            {/* Services Section */}
-            <div className="bg-gray-200 rounded-md p-6 ">
-              <h1 className="text-2xl lg:text-3xl font-normal py-4">Xizmatlar</h1>
-              <ul>
-                {services.slice(0, 8).map((service) => (
-                  <li
-                    key={service.id}
-                    className="w-full flex items-center mb-4 p-4 bg-white  hover:bg-yellow-700 hover:text-white rounded-md"
-                  >
-                    <span className="mr-2 mt-2">
-                      <FaAngleDoubleRight />
-                    </span>
-                    <a
-                      href={`/service/${service.id}`}
-                      className="text-black hover:text-white  "
-                    >
-                      {service.title_uz}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
-            {/* Similar Posts Section */}
-            <div className="bg-gray-200 rounded-md p-6 ">
-              <h1 className="text-2xl lg:text-3xl font-normal py-4">O'xshash Postlar</h1>
-              <ul className="lg:space-y-8 " >
-                {news.map((item) => (
-                  <li
-                    key={item.id}
-                    className="w-[90%] m-auto mb-4 flex flex-col items-start"
-                  >
-                    <a
-                      href={`/news-single/${item.id}`}
-                      className="text-black hover:text-yellow-900"
-                    >
-                      {item.title_uz}
-                    </a>
-                    
-                    <span className="text-yellow-800 text-sm mt-1">2023-12-05</span>
-                  </li>
-                ))}
-              </ul>
-            
-            </div>
+            <Xizmatlar/>
+            <Postlar/>
+
           </div>
         </div>
       </div>

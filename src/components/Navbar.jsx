@@ -60,7 +60,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="bg-white shadow-md">
+      <header className="bg-white shadow-md  ">
         <div className="container mx-auto flex flex-wrap justify-between items-center p-4 md:px-0 lg:px-8">
           {/* Logo and Contact */}
           <div className="flex items-center space-x-4">
