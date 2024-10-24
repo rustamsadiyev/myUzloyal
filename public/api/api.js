@@ -15,7 +15,7 @@ const useGetData = () => {
       fetch(`${baseUrl}/news`),
       fetch(`${baseUrl}/blogs`),
       fetch(`${baseUrl}/sources`),
-      fetch(`${baseUrl}/faqs`),
+      fetch(`${baseUrl}/faqs`), 
     ])
       .then(([resServices, resNews, resBlogs, resSources, resFaqs]) => {
         return Promise.all([
