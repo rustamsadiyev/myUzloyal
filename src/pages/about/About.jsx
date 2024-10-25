@@ -22,7 +22,7 @@ import CountUp from 'react-countup'
 
 const help_content = [
   { text: 'korporativ nizolar', img: help1 },
-  { text: 'savdo uyi, vakolatxona yoki kompaniya ochish', img: help2 },
+  { text: 'Savdo uyi, vakolatxona ochish', img: help2 },
   { text: 'Iqtisodiy jinoyatlar uchun himoya', img: help3 },
   { text: 'Merosga oid ishlar va nizolar', img: help4 },
   { text: 'soliq nizolari', img: help5 },
@@ -63,11 +63,11 @@ function About() {
               Biz Sizga mukammal yordam <br /> bera oladigan eng yaxshi <br /> yuridik firmamiz!
             </div>
             <div className={css.why_content__text}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Ishingiz bilan tadbirkorlik subyektlariga yuridik xizmatlar ko‘rsatishga ixtisoslashgan, bu borada yetarli bilim va tajribaga ega, iqtisod va huquqni birdek yaxshi biladigan, tashkil etish va yuritishning barcha nozik tomonlarini biladigan mutaxassis shug‘ullanayotganiga doim amin bo‘lishingiz mumkin.
             </div>
             <div className={css.why_content__text}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Ishingiz bilan tadbirkorlik subyektlariga yuridik xizmatlar ko‘rsatishga ixtisoslashgan, bu borada yetarli bilim va tajribaga ega, iqtisod va huquqni birdek yaxshi biladigan, tashkil etish va yuritishning barcha nozik tomonlarini biladigan mutaxassis shug‘ullanayotganiga doim amin bo‘lishingiz mumkin.
             </div>
           </div>
@@ -105,7 +105,7 @@ function About() {
             className="mySwiper">
             <SwiperSlide>
               <div className={css.slide}>
-                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing.  Quas rem natus odio odit? Nisi est excepturi aperiam,  mollitia laudantium enim voluptatem nulla aliquam maxime,  milamur rerum dolorum distinctio"</div>
+                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing. <br />  Quas rem natus odio odit? Nisi est excepturi aperiam <br />  molliti laudantium enim voluptatem nulla maxime <br /> peron dela milamur rerum dolorum distinctio"</div>
                 <img className={css.slide_moon} src={portrait} alt="" />
                 <div className={css.slide_name}>Aliza Anney</div>
                 <div className={css.slide_job}>Model Belarus</div>
@@ -113,7 +113,7 @@ function About() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={css.slide}>
-                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing.  Quas rem natus odio odit? Nisi est excepturi aperiam,  mollitia laudantium enim voluptatem nulla aliquam maxime,  milamur rerum dolorum distinctio"</div>
+                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing. <br />  Quas rem natus odio odit? Nisi est excepturi aperiam <br />  molliti laudantium enim voluptatem nulla maxime <br /> peron dela milamur rerum dolorum distinctio"</div>
                 <img className={css.slide_moon} src={portrait} alt="" />
                 <div className={css.slide_name}>Milani Harverd</div>
                 <div className={css.slide_job}>CEO of GRK agency</div>
@@ -121,7 +121,7 @@ function About() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={css.slide}>
-                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing.  Quas rem natus odio odit? Nisi est excepturi aperiam,  mollitia laudantium enim voluptatem nulla aliquam maxime,  milamur rerum dolorum distinctio"</div>
+                <div className={css.slide_title}>"Lorem, ipsum dolor sit amet consectetur adipisicing. <br />  Quas rem natus odio odit? Nisi est excepturi aperiam <br />  molliti laudantium enim voluptatem nulla maxime <br /> peron dela milamur rerum dolorum distinctio"</div>
                 <img className={css.slide_moon} src={portrait} alt="" />
                 <div className={css.slide_name}>David Miller</div>
                 <div className={css.slide_job}>Designer UK</div>
