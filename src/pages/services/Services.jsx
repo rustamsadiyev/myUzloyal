@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function Services() {
-  return (
-    <div>
-      
-    </div>
-  )
+  const baseUrl = "https://test.uzloyal.uz/api";
+
+  const getData = () => {
+    fetch(`${baseUrl}/services`).then((data) => console.log(data));
+  };
+  return <div></div>;
 }
 
-export default Services
+export default Services;
