@@ -88,7 +88,7 @@ function Navbar() {
 
   return (
     <>
-      <header className="bg-white shadow-md fixed top-0  left-0 w-full">
+      <header className="bg-white shadow-md fixed top-0  left-0 w-full z-50">
         <div className="container mx-auto flex flex-wrap justify-between items-center p-4 md:px-0 lg:px-8">
           {/* Logo and Contact */}
           <div className="flex items-center space-x-4">
@@ -114,7 +114,6 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Main Navigation */}
           <nav className="hidden lg:flex flex-col align-middle justify-between gap-2 items-center">
             <p className="text-xs text-[#C49A6C]">{t("navbar.mf")}</p>
             {/* Example of using services for navigation */}

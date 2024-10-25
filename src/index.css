@@ -41,3 +41,46 @@
  .hover:hover {
   border-bottom: 2px solid yellow;
 }
+
+
+.bottom-line {
+  position: relative;
+}
+
+.bottom-line::after {
+   content: " ";
+   position: absolute;
+   bottom: -10px;
+   left: 48%;
+   width: 5%;
+   height: 1px;
+   background: #CDB091;
+}
+
+.left-line {
+  position: relative;
+}
+
+.left-line::after {
+   content: " ";
+   position: absolute;
+   bottom: 12px;
+   left: -15%;
+   width: 13%;
+   height: 1px;
+   background: #CDB091;
+}
+
+.left-wall {
+  position: relative;
+}
+
+.left-wall::after {
+   content: " ";
+   position: absolute;
+   bottom: -100%;
+   left: -1%;
+   width: 2px;
+   height: 210%;
+   background: #CDB091;
+}
