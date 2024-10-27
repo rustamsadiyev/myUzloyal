@@ -1,7 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 function Footer() {
+  const {t} = useTranslation()
+
   return (
+
     <>
 
         
@@ -10,17 +14,17 @@ function Footer() {
     
     {/* Logo and Description */}
     <div>
-      <h2 className="text-2xl font-bold mb-4">LOYAL advokatlik byurosi</h2>
-      <p className="mb-6">Biz Sizga mukammal yordam bera oladigan eng yaxshi yuridik firmamiz!</p>
+      <h2 className="text-2xl font-bold mb-4">{t("loyal_law_firm")}</h2>
+      <p className="mb-6">{t("slogan")}</p>
       {/* Social icons */}
       <div className="flex space-x-4">
-        <a href="#" className="text-white hover:text-gray-200">
+        <a href="https://www.facebook.com/people/Advokat-uzbekistan-24/61554269997134/?mibextid=ZbWKwL" target='blank' className="text-white hover:text-gray-200">
           <i className="fab fa-facebook-f"></i>
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
+        <a href="https://www.instagram.com/advokat_uzbekistan_24/" target='blank' className="text-white hover:text-gray-200">
           <i className="fab fa-telegram"></i>
         </a>
-        <a href="#" className="text-white hover:text-gray-200">
+        <a href="https://telegram.org/Lazy_frontend_developer" target='blank' className="text-white hover:text-gray-200">
           <i className="fab fa-instagram"></i>
         </a>
       </div>
@@ -28,16 +32,16 @@ function Footer() {
 
     {/* Links Section */}
     <div>
-      <h3 className="text-xl font-bold mb-4">Havolalar</h3>
+      <h3 className="text-xl font-bold mb-4">{t("")}</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:underline">Asosiy</a></li>
-        <li><a href="#" className="hover:underline">Biz haqimizda</a></li>
-        <li><a href="#" className="hover:underline">Xizmatlar</a></li>
-        <li><a href="#" className="hover:underline">Bizning maqolalar</a></li>
-        <li><a href="#" className="hover:underline">Yangiliklar</a></li>
-        <li><a href="#" className="hover:underline">Hujjat Namunalari</a></li>
-        <li><a href="#" className="hover:underline">Savollarga javoblar</a></li>
-        <li><a href="#" className="hover:underline">Bog'lanish</a></li>
+        <li><a href="/main" className="hover:underline">{t('home')}</a></li>
+        <li><a href="about"  className="hover:underline"> {t("about_us")} </a></li>
+        <li><a href="/services" className="hover:underline">{t("services")}</a></li>
+        <li><a href="/blog"  className="hover:underline">{t("articles")}</a></li>
+        <li><a href="/news"  className="hover:underline">{t("news")}</a></li>
+        <li><a href="/samples" className="hover:underline">{t("document_samples")}</a></li>
+        <li><a href="/faqs" className="hover:underline">{t("faqs")}</a></li>
+        <li><a href="/contact" className="hover:underline">{t("contact")}</a></li>
       </ul>
     </div>
 
@@ -45,12 +49,12 @@ function Footer() {
     <div>
       <h3 className="text-xl font-bold mb-4">Xizmatlar</h3>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:underline">Oila huquqi</a></li>
-        <li><a href="#" className="hover:underline">Shaxsiy zarar</a></li>
-        <li><a href="#" className="hover:underline">Jinoyat huquqi</a></li>
-        <li><a href="#" className="hover:underline">Ta'lim huquqi</a></li>
-        <li><a href="#" className="hover:underline">Biznes huquqi</a></li>
-        <li><a href="#" className="hover:underline">Uy-joy huquqi</a></li>
+        <li><a href="/services" className="hover:underline">{t("family_law")}</a></li>
+        <li><a href="/services" className="hover:underline">{t("personal_injury")}</a></li>
+        <li><a href="/services" className="hover:underline">{t("criminal_law")}</a></li>
+        <li><a href="/services" className="hover:underline">{t("education_law")}</a></li>
+        <li><a href="/services" className="hover:underline">{t("business_law")}</a></li>
+        <li><a href="/services" className="hover:underline">{t("housing_law")}</a></li>
       </ul>
     </div>
     
